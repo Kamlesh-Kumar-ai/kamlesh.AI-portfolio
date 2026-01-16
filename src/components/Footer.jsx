@@ -22,11 +22,11 @@ export default function Footer() {
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Innovative Python AI/ML Engineer specializing in building complex neural networks 
-               and scalable production-ready AI solutions[cite: 6, 7, 8].
+               and scalable production-ready AI solutions.
             </p>
             <div className="flex gap-4">
-              <a href="https://github.com/Kamlesh-Kumar-ai" className="text-gray-500 hover:text-white transition-colors"><Github size={20} /></a>
-              <a href="https://www.linkedin.com/in/kamlesh-k-bb9705247" className="text-gray-500 hover:text-white transition-colors"><Linkedin size={20} /></a>
+              <a href="https://github.com/Kamlesh-Kumar-ai" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors"><Github size={20} /></a>
+              <a href="https://www.linkedin.com/in/kamlesh-k-bb9705247" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors"><Linkedin size={20} /></a>
               <a href="mailto:kk919844@gmail.com" className="text-gray-500 hover:text-white transition-colors"><Mail size={20} /></a>
             </div>
           </div>
@@ -52,15 +52,15 @@ export default function Footer() {
             <ul className="space-y-4 text-xs text-gray-400">
               <li className="flex flex-col">
                 <span className="text-white font-medium">Stanford University</span>
-                <span>ML & Deep Learning Specialization [cite: 13]</span>
+                <span>ML & Deep Learning Specialization</span>
               </li>
               <li className="flex flex-col">
                 <span className="text-white font-medium">ThinkNEXT Technologies</span>
-                <span>Python Django Web Development [cite: 15]</span>
+                <span>Python Django Web Development</span>
               </li>
               <li className="flex flex-col">
                 <span className="text-white font-medium">AKTU University</span>
-                <span>B.Tech in Computer Science [cite: 11]</span>
+                <span>B.Tech in Computer Science</span>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ export default function Footer() {
             <div className="bg-white/5 border border-white/10 rounded-xl p-4">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-[10px] text-gray-500 font-mono">NODE_LOCATION</span>
-                <span className="text-[10px] text-[#BAA0F8] font-mono">NOIDA_IN [cite: 5]</span>
+                <span className="text-[10px] text-[#BAA0F8] font-mono">NOIDA_IN</span>
               </div>
               <div className="flex items-center justify-between mb-4">
                 <span className="text-[10px] text-gray-500 font-mono">AI_PROFICIENCY</span>
