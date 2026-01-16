@@ -33,10 +33,10 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-4 left-0 right-0 z-[100] flex justify-center px-4"
+      className="fixed top-4 left-0 right-0 z-[100] flex justify-center px-3 sm:px-4"
     >
       {/* Desktop Navbar */}
-      <div className="hidden md:flex relative items-center gap-2 px-3 py-2 bg-black/60 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl">
+      <div className="hidden md:flex relative items-center gap-2 px-3 py-2 bg-black/60 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl max-w-5xl">
         {navItems.map((item) => (
           <a
             key={item.name}
@@ -71,14 +71,14 @@ export default function Navbar() {
       </div>
 
       {/* Mobile/Tablet Navbar */}
-      <div className="md:hidden w-full max-w-md">
-        <div className="flex items-center justify-between px-4 py-3 bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl">
-          <div className="text-white font-bold text-lg">Kamlesh.AI</div>
+      <div className="md:hidden w-full px-2">
+        <div className="flex items-center justify-between px-3 sm:px-4 py-3 bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl">
+          <div className="text-white font-bold text-base sm:text-lg truncate">Kamlesh.AI</div>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white p-2 hover:bg-white/10 rounded-lg transition"
+            className="text-white p-2 hover:bg-white/10 rounded-lg transition flex-shrink-0"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 
@@ -89,15 +89,15 @@ export default function Navbar() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="absolute top-16 left-4 right-4 bg-black/80 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden"
+              className="absolute top-16 left-2 right-2 sm:left-4 sm:right-4 bg-black/80 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden z-50"
             >
-              <div className="flex flex-col p-4 gap-2">
+              <div className="flex flex-col p-3 sm:p-4 gap-2">
                 {navItems.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
                     onClick={(e) => handleScroll(e, item.href)}
-                    className="px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition text-sm font-medium"
+                    className="px-3 sm:px-4 py-2 sm:py-3 text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition text-sm font-medium"
                   >
                     {item.name}
                   </a>
@@ -106,7 +106,7 @@ export default function Navbar() {
                   href="#contact"
                   onClick={(e) => handleScroll(e, "#contact")}
                   whileHover={{ scale: 1.05 }}
-                  className="mt-2 px-4 py-3 bg-gradient-to-r from-[#BAA0F8] to-[#9d72f3] text-black text-xs font-bold uppercase tracking-tighter rounded-lg cursor-pointer text-center"
+                  className="mt-2 px-3 sm:px-4 py-2 sm:py-3 bg-gradient-to-r from-[#BAA0F8] to-[#9d72f3] text-black text-xs font-bold uppercase tracking-tighter rounded-lg cursor-pointer text-center"
                 >
                   Initialize Sync
                 </motion.a>
