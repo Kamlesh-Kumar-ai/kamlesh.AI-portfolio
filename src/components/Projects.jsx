@@ -44,8 +44,8 @@ export default function ProjectSection() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
           <div>
-            <h2 className="text-4xl font-bold text-white mb-4 italic">/Featured_Deployments</h2>
-            <p className="text-gray-400 max-w-lg">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 italic">/Featured_Deployments</h2>
+            <p className="text-xs sm:text-sm md:text-base text-gray-400 max-w-lg">
               A selection of production-ready AI solutions, from generative agents to high-security threat detection systems. [cite: 8, 114]
             </p>
           </div>
