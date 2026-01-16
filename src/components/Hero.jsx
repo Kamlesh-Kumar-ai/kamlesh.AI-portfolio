@@ -23,7 +23,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0b]">
+    <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-x-hidden bg-[#0a0a0b]">
       
       {/* 1. Dynamic Grid Background */}
       <div className="absolute inset-0 opacity-20" 
@@ -41,7 +41,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 text-center">
         {/* Intro Badge with Pulse */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -59,30 +59,30 @@ export default function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl md:text-8xl font-black text-white tracking-tighter"
+          className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-tight"
         >
-          Architecting <br />
+          Architecting <br className="hidden sm:block" />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#BAA0F8] via-white to-[#BAA0F8] animate-gradient-x">
             Autonomous Logic
           </span>
         </motion.h1>
 
         {/* Dynamic Subtitle */}
-        <motion.p className="mt-8 max-w-2xl mx-auto text-gray-400 text-lg md:text-xl font-light leading-relaxed">
+        <motion.p className="mt-6 sm:mt-8 max-w-2xl mx-auto text-gray-400 text-xs sm:text-sm md:text-lg lg:text-xl font-light leading-relaxed px-2">
           I'm <span className="text-white font-medium">Kamlesh Kumar</span>. I bridge the gap between complex 
           mathematical models and scalable web architectures, specializing in 
-          <span className="text-[#BAA0F8] font-mono ml-2 underline underline-offset-4 decoration-[#BAA0F8]/30">
+          <span className="text-[#BAA0F8] font-mono inline-block ml-1 underline underline-offset-4 decoration-[#BAA0F8]/30">
              production-grade ML.
           </span>
         </motion.p>
 
         {/* Magnetic Buttons */}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
+        <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 px-2">
           <motion.a
             href="#projects"
             whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(186,160,248,0.4)" }}
             whileTap={{ scale: 0.98 }}
-            className="group relative px-8 py-4 bg-white text-black font-bold rounded-xl overflow-hidden"
+            className="group relative w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-bold rounded-xl overflow-hidden text-sm sm:text-base"
           >
             <span className="relative z-10">Deploy Portfolio</span>
             <motion.div className="absolute inset-0 bg-[#BAA0F8] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300" />
@@ -91,7 +91,7 @@ export default function Hero() {
           <motion.a
             href="#contact"
             whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.05)" }}
-            className="px-8 py-4 border border-white/10 text-white font-medium rounded-xl transition-all"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border border-white/10 text-white font-medium rounded-xl transition-all text-sm sm:text-base"
           >
             View Documentation
           </motion.a>

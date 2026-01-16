@@ -38,8 +38,8 @@ const skillCategories = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-24 bg-[#0a0a0b] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <section id="skills" className="py-20 sm:py-24 md:py-28 bg-[#0a0a0b] relative overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

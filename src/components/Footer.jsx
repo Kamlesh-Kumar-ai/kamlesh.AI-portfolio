@@ -5,11 +5,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-[#0a0a0b] pt-20 pb-10 border-t border-white/5 overflow-hidden">
+    <footer className="relative bg-[#0a0a0b] pt-16 sm:pt-20 pb-8 sm:pb-10 border-t border-white/5 overflow-x-hidden">
       {/* Background Decorative Element */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-[#BAA0F8]/50 to-transparent opacity-30" />
       
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
           {/* Column 1: Brand & Bio */}

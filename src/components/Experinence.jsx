@@ -31,11 +31,11 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-32 bg-[#0a0a0b] overflow-hidden">
+    <section id="experience" className="relative py-20 sm:py-24 md:py-32 bg-[#0a0a0b] overflow-x-hidden">
       {/* Background Decorative Element */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-[#BAA0F8]/5 blur-[120px] -z-10" />
 
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, x: -20 }}

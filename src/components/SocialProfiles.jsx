@@ -30,8 +30,8 @@ const socialLinks = [
 
 export default function SocialSection() {
   return (
-    <section id="contact" className="py-24 bg-[#0a0a0b] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="contact" className="py-20 sm:py-24 md:py-28 bg-[#0a0a0b] relative overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
           {/* Left Side: Text Content */}

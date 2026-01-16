@@ -9,12 +9,12 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-32 bg-[#0a0a0b] overflow-hidden">
+    <section id="about" className="relative py-20 sm:py-24 md:py-32 bg-[#0a0a0b] overflow-x-hidden">
       {/* Background AI Mesh */}
       <div className="absolute inset-0 opacity-10" 
            style={{ backgroundImage: `radial-gradient(#BAA0F8 0.5px, transparent 0.5px)`, backgroundSize: '24px 24px' }} />
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
